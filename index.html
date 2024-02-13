@@ -1,41 +1,68 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Demo</title>
-    <link rel="stylesheet" href="app.css">
-    <script src="app.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificates</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
 </head>
 <body>
-    <div class="pagewrapper">
+  <header>
+    <h1>Get certifide for varius reasons</h1>
+  </header>
+  <section class="pagewrapper">
 
-        <section class="left">
+    <form action="" id="myForm" class="top">
 
-            <div class="certificate " id="certificate">
-                <span id="nameOutput" class="visible">Test Name</span>
-                <span id="info">Test Info</span>
-            </div>
+      <section class="column">
+        <label for="name">Who's recieving this award?</label>
+      <label for="name">Who's receiving this award?</label>
+      <input type="text" name="name" id="name" placeholder="Recipient">
 
-        </section>
+        <input type="text" name="name" id="name" placeholder="Name">
+      </section>
+      <label for="donor">What's your name?</label>
+      <input type="text" name="donor" id="donor" placeholder="Donor">
 
-        <section class="right">
+      <section class="column">
+        <label for="donor">What's your name?</label>
+      <label for="type">Which certificate?</label>
+      <select name="type" id="type">
+        <option value="Skill Issue">Skill Issue</option>
+        <option value="Being Awarded">Being Awarded</option>
+        <option value="Being Real">Being Real</option>`
+      </select>
 
-            <form action="" id="myForm">
-    
-                <input type="text" name="name" id="name" placeholder="Name">
-        
-                <select name="type" id="type">
-                    <option value="A">A</option>
-                    <option value="B">B</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
-                </select>
-                <input type="submit" value="Generate">
-        
-            </form>
-        </section>
+        <input type="text" name="donor" id="donor" placeholder="Donor">
+      </section>
 
-    </div>    
+      <section class="column">
+        <label for="type">Which certificate?</label>
+
+        <select name="type" id="type">
+          <option value="Skill Issue">Skill Issue</option>
+          <option value="Being Awarded">Being Awarded</option>
+          <option value="Being Real">Being Real</option>
+        </select>
+      </section>
+
+    </form>
+    <input type="submit" value="Get Certificate" />
+    <input type="submit" value="Print Certificate!" onclick="window.print()" />
+
+
+    <section class="bottom">
+
+      <div class="certificate" id="certificate">
+        <span id="nameOutput"></span>
+        <span id="donorOutput"></span>
+        <span id="today"></span>
+        <span id="info"></spam>
+      </div>
+
+    </section>
+  </section>
 </body>
-</html>
+</html
