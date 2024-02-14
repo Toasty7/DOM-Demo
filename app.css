@@ -1,39 +1,77 @@
-body {
-    margin: 0;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@400;600&display=swap');
 * {
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust:exact;
 }
-
-.pagewrapper {
+body {
+    background-image: url(imgs/background.png);
+}
+header {
     display: flex;
-    height: 100vh;
 }
 
-.left{
-    width: 75vw;
-    padding: 1em;
+ header {
+}
+.top {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 2%;
 }
 
-.right {
-    width: 25vw;
-    background-color: lightgray;
-    padding: 1em;
+.column {
+    width: 50vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.number1 {
-    color: red;
+#type {
+    width: 40px;
 }
 
-.number2 {
-    color: blue
+.bottom {
+color: rgba(0, 0, 0, 0);
 }
 
-.number3 {
-    color: blueviolet;
+#nameOutput {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: start;
+  padding-left: 26.5%;
+  padding-top: 32%;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-.number4 {
-    color: orange;
+#donorOutput {
+    font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: start;
+    padding-top: 34%;
+    padding-left: 26%;
+}
+
+#today {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    padding-top: -2%;
+    padding-left: 67%;
+}
+
+@media print {
+    header,
+    .top,
+    input {
+        display: none;
+    }
+    body {
+        margin-top: 12.5%;
+        transform: scale(1.5);
+    }
 }
